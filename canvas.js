@@ -1,5 +1,5 @@
-// Learned this from a canvas.js introduction course, check out the courses here: https://www.youtube.com/c/ChrisCourses)
-// He teaches some pretty neat stuff
+// Learned this from a canvas.js introduction course, check out the courses here: https://www.youtube.com/c/ChrisCourses
+// He teaches some pretty neat things
 
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
