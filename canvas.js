@@ -6,7 +6,7 @@ var c = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 // Define min and max sizes
-let maxRadius = 150;
+let maxRadius = 140;
 let minRadius = 30;
 
 var mouse = {
@@ -66,7 +66,7 @@ function Circle(x, y, velocityX, velocityY, radius) {
         this.y += this.velocityY;
 
         // Interactivity, specifying max size and min size, as well as 50 pixels mouse event will trigger size change
-        if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y > -50) {
+        if (mouse.x - this.x < 80 && mouse.x - this.x > -80 && mouse.y - this.y < 80 && mouse.y - this.y > -80) {
             if (this.radius < maxRadius) {
                 this.radius += 1;
             }
@@ -82,7 +82,7 @@ function init() {
     // Clears previous circles to prevent generations every resize stacking
     circleArray = [];
 
-    for (var i = 0; i < 600; i++) {
+    for (var i = 0; i < 400; i++) {
         // Generate Random Radiuses
         let radius = Math.random() * 20 + 1;
         // Random Spawn location 
